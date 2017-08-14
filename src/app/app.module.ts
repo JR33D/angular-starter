@@ -1,15 +1,11 @@
+import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import {NgModule} from '@angular/core';
-import {AppComponent} from './app.component';
-import {ConsoleLogger} from './shared/logger.service';
 
+import { AppComponent } from './components/app.component';
 
 @NgModule({
-    imports: [BrowserModule],
+    bootstrap: [AppComponent],
     declarations: [AppComponent],
-    providers: [ConsoleLogger],
-    bootstrap: [AppComponent]
+    imports: [BrowserModule]
 })
-export class AppModule{
-    constructor(){}
-}
+export class AppModule { }
