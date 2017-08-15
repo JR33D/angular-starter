@@ -94,5 +94,4 @@ module.exports = function(config) {
     browsers: ['Chrome'],
     singleRun: false
   });
-  console.log(config.files);
 }
